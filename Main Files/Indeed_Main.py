@@ -24,8 +24,6 @@ try:
         company_location = element.find_element(By.CLASS_NAME, 'companyLocation')
         links = element.find_element(By.TAG_NAME, 'a')
         link = links.get_attribute('href')
-        links = element.find_element(By.TAG_NAME, 'a')
-        link = links.get_attribute('href')
 
 
 

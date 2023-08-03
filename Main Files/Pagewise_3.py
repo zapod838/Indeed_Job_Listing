@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
 import time
 
 
@@ -31,15 +30,15 @@ try:
     time.sleep(15)
     #wait = WebDriverWait(driver, 10)
 
-    def scroll_down_multiple_times():
-        scroll_pause_time = 10  # Adjust this value to control the scrolling speed
-        max_scroll_attempts = 10 
-        for _ in range(max_scroll_attempts):
+    #def scroll_down_multiple_times():
+        #scroll_pause_time = 10  # Adjust this value to control the scrolling speed
+        #max_scroll_attempts = 10 
+        #for _ in range(max_scroll_attempts):
             # Scroll down to the bottom of the page
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            #driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
             # Wait for a short pause to allow the page to load new elements
-            time.sleep(scroll_pause_time)
+            #time.sleep(scroll_pause_time)
 
     button = driver.find_element(By.XPATH, '//*[@id="jobsearch-JapanPage"]/div/div/div[5]/div[1]/nav/div[2]/a')
     #time.sleep(10)
